@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
         var quantity = parseInt(modalQuantity.textContent);
         var total = parseFloat(modalTotalPrice.textContent);
         var ticketName = modalTicketTitle.textContent;
-        alert('You have successfully purchased ' + quantity + ' tickets for ' + ticketName + ' for a total of $' + total + '!');
+        alert('You have successfully purchased ' + quantity + ' ticket(s) for ' + ticketName + ' for a total of $' + total + '!');
         modalOverlay.style.display = 'none';
     });
 });
