@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="tickets.css">
+    <link rel="stylesheet" href="age-check.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <script src="tickets.js" defer></script>
+    <script src="main_page.js" defer></script>
+    <link rel="icon" href="Icon.png" type="image/png">
+</head>
+<body>
+
+<header>
+    <nav>
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="awards.html">Awards</a></li>
+            <li><a href="leagues.html">Leagues</a></li>
+            <li><a href="tickets.html">Tickets</a></li>
+        </ul>
+    </nav>
+    
+</header>
+
+<div id="age-check-overlay">
+    <h2>Please enter your age to continue</h2>
+    <input type="number" id="ageInput" placeholder="Enter your age">
+    <button onclick="checkAge()">Submit</button>
+    <p id="age-message"></p>
+</div>
+
+<main>
+    <div class="ticket-container">
+        <div class="ticket-card">
+            <h3>Champions League</h3>
+            <p>Secure your spot at the grand finale!</p>
+            <a href="#" class="buy-tickets-button" data-ticket-id="champions-league">Buy Tickets</a>
+        </div>
+        <div class="ticket-card">
+            <h3>World Cup</h3>
+            <p>Watch the world's top nations battle it out!</p>
+            <a href="#" class="buy-tickets-button" data-ticket-id="world-cup">Buy Tickets</a>
+        </div>
+        <div class="ticket-card">
+            <h3>Euro</h3>
+            <p>Experience Europes football drama!</p>
+            <a href="#" class="buy-tickets-button" data-ticket-id="euro">Buy Tickets</a>
+        </div>
+        <div class="ticket-card">
+            <h3>Copa America</h3>
+            <p>South America’s finest teams compete here!</p>
+            <a href="#" class="buy-tickets-button" data-ticket-id="copa-america">Buy Tickets</a>
+        </div>
+        <div class="ticket-card">
+            <h3>Nations League</h3>
+            <p>Europes rising competition with big matchups!</p>
+            <a href="#" class="buy-tickets-button" data-ticket-id="nations-league">Buy Tickets</a>
+        </div>
+    </div>
+
+
+    <div id="ticket-modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-button" id="close-modal-button">&times;</span>
+            <h3 id="modal-ticket-title"></h3>
+            <p class="modal-price-display">Price per unit: $<span id="modal-unit-price"></span></p>
+            <div class="modal-quantity-control">
+                <button id="decrement-quantity">-</button>
+                <span id="modal-quantity">1</span>
+                <button id="increment-quantity">+</button>
+            </div>
+            <p class="modal-price-display">Total price: $<span id="modal-total-price"></span></p>
+            <button id="confirm-buy-button">Buy Now</button>
+        </div>
+    </div>
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Football All rights reserved.</p>
+</footer>
+
+</body>
+</html>

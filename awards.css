@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+
+/* navigation */
+header {
+  background-color: darkgreen;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #064d00; 
+}
+
+.navbar li a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #023300; 
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #035500; 
+  transform: scale(1.2);
+  z-index: 1; 
+}
+
+.navbar li a:hover {
+  transform: scale(1.2);
+  background-color: #035500;
+  z-index: 1;
+}
+
+.navbar li a:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar:hover li a:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.navbar:not(:hover) li a {
+  transform: scale(1);
+  opacity: 1;
+}
+
+
+/* main */
+main {
+    background-image: url(https://media.istockphoto.com/id/472347896/photo/striped-soccer-field.jpg?s=612x612&w=0&k=20&c=wgeavCCOimF1b5mrv9QNQuuJqs1ERX67pDjPT3yv8j8=);
+}
+
+.page-title {
+  font-size: 3em;
+  color: white;
+  margin-bottom: 40px;
+}
+
+.award-card {
+  width: 700px;
+  max-width: 90%;
+  margin: 30px auto;
+  display: flex;
+  border: 3px solid darkgreen;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.award-card:hover {
+  transform: scale(1.05);
+}
+
+.award-image {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.award-info {
+  padding: 20px;
+  text-align: left;
+  flex-grow: 1;
+}
+
+.award-info h2 {
+  margin-top: 0;
+  color: darkgreen;
+  font-size: 1.6em;
+}
+
+.award-info p {
+  margin: 10px 0 0;
+  color: #444;
+  font-size: 1em;
+}
+
+
+/* footer */
+footer {
+    background-color: #004d00;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.profile-area {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+#hello-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 6px;
+}

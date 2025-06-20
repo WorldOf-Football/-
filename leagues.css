@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+  font-family: "Work Sans", sans-serif;
+}
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* navigation */
+header {
+  background-color: darkgreen;
+  padding: 10px 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #064d00; 
+}
+
+.navbar li a {
+  display: inline-block;
+  padding: 12px 25px;
+  background-color: #023300; 
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.navbar li a:hover {
+  background-color: #035500; 
+  transform: scale(1.2);
+  z-index: 1; 
+}
+
+.navbar li a:hover {
+  transform: scale(1.2);
+  background-color: #035500;
+  z-index: 1;
+}
+
+.navbar li a:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.8;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.navbar:hover li a:not(:hover) {
+  transform: scale(0.9);
+  opacity: 0.8;
+}
+
+.navbar:not(:hover) li a {
+  transform: scale(1);
+  opacity: 1;
+}
+
+/* main */
+main {
+    background-image: url(https://media.istockphoto.com/id/472347896/photo/striped-soccer-field.jpg?s=612x612&w=0&k=20&c=wgeavCCOimF1b5mrv9QNQuuJqs1ERX67pDjPT3yv8j8=);
+}
+
+.league {
+      margin-bottom: 50px;
+      padding: 10px;
+      border-radius: 8px;
+      color: white;
+      transition: transform 0.3s ease;
+    }
+
+    .league-header {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 25px;
+      text-align: center; 
+    }
+
+    .league-info {
+      margin: 0 auto;
+      max-width: 700px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid white;
+      padding: 20px;
+      border-radius: 12px;
+      background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    .league-info img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      background-color: white;
+      padding: 10px;
+      border-radius: 10px;
+      margin-right: 25px;
+    }
+
+    .league-details {
+      text-align: left;
+    }
+
+    .league-details h3 {
+      margin: 0 0 10px 0;
+    }
+
+    .league-details p {
+      margin: 4px 0;
+      font-size: 15px;
+    }
+
+    
+    .la-liga { background-color: orange; }
+    .premier-league { background-color: purple; }
+    .league-1 { background-color: #007BFF; }
+    .serie-a { background-color: green; }
+    .bundesliga { background-color: red; }
+
+
+    
+.league:hover {
+  transform: scale(1.1);
+  filter: brightness(1);
+  z-index: 10;
+}
+
+
+.leagues-container:hover .league:not(:hover) {
+  transform: scale(0.9);
+  filter: brightness(0.7);
+}
+
+/* footer */
+footer {
+    background-color: #004d00;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 50px;
+    font-size: 14px;
+}
+.profile-area {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#profile-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  outline: none;
+  display: flex;
+  align-items: center;
+}
+
+.profile-icon {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: #eee;
+  border: 1px solid #ccc;
+}
+
+#hello-text {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
